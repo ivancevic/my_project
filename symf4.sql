@@ -1,3 +1,4 @@
+use symf4;
 -- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (aarch64)
 --
 -- Host: localhost    Database: symf4
