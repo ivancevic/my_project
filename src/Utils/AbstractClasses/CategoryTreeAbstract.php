@@ -7,11 +7,12 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 abstract class CategoryTreeAbstract {
     
     public $categoriesArrayFromDb;
+    public $categorilist;
     protected static $dbconnection;
 
-    public function __construct(EntityManagerInterface $entitymanager, UrlGeneratorInterface $urlgenartor) {
+    public function __construct(EntityManagerInterface $entitymanager, UrlGeneratorInterface $urlgenerator) {
         $this->entitymanager = $entitymanager;
-        $this->urlgenartor = $urlgenartor;
+        $this->urlgenerator = $urlgenerator;
         $this->categoriesArrayFromDb = $this->getCategories();
     }
     
